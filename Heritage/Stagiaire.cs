@@ -34,5 +34,9 @@ namespace Heritage
             return $"Je suis Stagiaire et je m'appele {this.Nom}";
         }
 
+        public override string NomComplet()
+        {
+            return $"{this.Nom} {this.Prenom}";
+        }
     }
 }

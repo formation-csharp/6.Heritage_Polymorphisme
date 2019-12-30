@@ -32,5 +32,10 @@ namespace Heritage
         {
             return $"Je suis Formateur et je m'appele {this.Nom}";
         }
+
+        public  string NomComplet()
+        {
+            return $"{this.Nom} {this.Prenom}";
+        }
     }
 }

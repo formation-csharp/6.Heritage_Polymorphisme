@@ -9,6 +9,7 @@ namespace Heritage
     public abstract class Personne
     {
         public String Nom { get; set; }
+        public String Prenom { get; set; }
         public DateTime DateNaissance { get; set; }
 
         public Personne(string Nom)
@@ -38,5 +39,7 @@ namespace Heritage
         {
             return $"Je suis Personne et je m'appele {this.Nom}";
         }
+
+        public abstract string NomComplet();
     }
 }
